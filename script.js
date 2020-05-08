@@ -2,11 +2,11 @@ function change()
 {
     var yup = document.getElementById("Yup");
     var nope = document.getElementById("Nope");
-    if (yup.innerHTML=="Yup") {
-        yup.innerHTML = "Nope";
-        nope.innerHTML = "Yup";
+    if (yup.innerText=="Yup") {
+        yup.innerText = "Nope";
+        nope.innerText = "Yup";
     }
-    else if(nope.innerHTML=="Yup"){
-        nope.innerHTML = "Yup";
-        yup.innerHTML = "Nope";
+    else if(nope.innerText=="Yup"){
+        nope.innerText = "Yup";
+        yup.innerText = "Nope";
 }
