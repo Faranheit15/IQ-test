@@ -1,12 +1,12 @@
-function change()
-{
-    var yup = document.getElementById("Yup");
-    var nope = document.getElementById("Nope");
-    if (yup.innerText=="Yup") {
-        yup.innerText = "Nope";
-        nope.innerText = "Yup";
-    }
-    else if(nope.innerText=="Yup"){
-        nope.innerText = "Yup";
-        yup.innerText = "Nope";
+function showInput() {
+    document.getElementById("output").innerHTML = 
+                document.getElementById("name").value;
 }
+
+showInput();
+
+showMessage() {
+    alert("Hiii");
+}
+
+showMessage();

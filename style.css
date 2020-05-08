@@ -126,3 +126,18 @@ div#line1 span#b {
 div#line1:hover span#b {
   display: inline;
 }
+
+hr {
+  height: 5px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+#footer {
+  position:fixed;
+  left:0px;
+  bottom:10px;
+  height:30px;
+  width:100%;
+  align-items: center;
+}
