@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+  </head>
+  <body>
     <div class="container">
-        <div class="popup">
-          <div class="popup-content">
-            <h2 class="popup-title">IQ Tester!</h2>
-            <p class="popup-body">Are you stupid?</p>
-            <form action="output.html">
+      <div class="popup">
+        <div class="popup-content">
+          <h2 class="popup-title">IQ Tester!</h2>
+          <p class="popup-body">Are you stupid?</p>
+          <form action="output.html">
             <div class="buttons">
               <div id="line1">
-              
-                <button class="btn-hover color-7" id="Yup" value="Yup" onclick="showMessage()"><span id="a">Yup</span><span id="b">Nope</span></button>
-              
-                <button class="btn-hover color-7" id="Yup" value="Nope" onclick="showMessage()"><span id="a">Nope</span><span id="b">Yup</span></button>
-            </div>
+                <button
+                  class="btn-hover color-7"
+                  id="Yup"
+                  value="Yup"
+                  onmouseover="change1()"
+                >Yup</button>
+                <button
+                class="btn-hover color-7"
+                id="Nope"
+                value="Nope"
+                onmouseover="change2()"
+              >Nope</button>
               </div>
-            </form>
-          </div>  
-        </div>  
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-    <script src="script.js"></script>
-</body>
+    <script>
+      var yup=document.getElementById("Yup");
+      var nope=document.getElementById("Nope");
+       function change1(){
+          if(yup.innerText === "Nope") {
+            yup.innerText="Yup"
+            nope.innerText="Nope"
+          }
+      }
+      function change2(){
+          if(nope.innerText === "Nope") {
+            nope.innerText="Yup"
+            yup.innerText="Nope"
+          }
+      }
+    </script>
+  </body>
 </html>
