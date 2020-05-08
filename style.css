@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+$blue: #32325d;
+$gray: #F5F6FA;
+$dark-gray: #6b7c93;
+$white: #fff;
+$border-rounded: 6px;
+
+
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $gray;
+}
+ 
+body {
+  padding: 1rem 0.5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: 'Raleway',Sans-serif;
+}
+
+.container {
+  display: flex;
+  -webkit-display: box;
+  -moz-display: box;
+  -ms-display: flexbox;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 6%;
+  margin: 0;
+}
+
+
+.popup {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: $white;
+  border-radius: $border-rounded;
+  padding: 3rem 2rem;
+  box-shadow: 0 10px 40px -14px rgba(0,0,0,0.25);
+  text-align: center;
+}
+  .popup-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .popup-title {
+    color: $blue;
+    font-size: 1.8em;
+    line-height: 1.5em;
+    font-weight: 900;
+    margin-top: 0;
+  }
+
+  .popup-body {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: $dark-gray;
+    font-weight: 500;
+    margin-bottom: 2.1em;
+  }
+  .buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+  .btn-hover.color-7 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
